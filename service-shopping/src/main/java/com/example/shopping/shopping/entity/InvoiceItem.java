@@ -11,6 +11,7 @@ import javax.validation.constraints.Positive;
 public class InvoiceItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "invoice_id")
     private Long id;
     @Positive(message = "El stock debe ser mayor que cero")
     private Double quantity;

@@ -1,12 +1,13 @@
-package com.example.customer.servicecustomer;
+package com.example.store.registry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 @SpringBootApplication
-public class ServiceCustomerApplication {
+public class RegistryServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceCustomerApplication.class, args);
+		SpringApplication.run(RegistryServiceApplication.class, args);
 	}
 
 }

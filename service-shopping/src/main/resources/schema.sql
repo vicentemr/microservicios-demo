@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS invoice_item;
 
 CREATE TABLE invoice_item (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    invoice_id BIGINT AUTO_INCREMENT PRIMARY KEY,
     product_id BIGINT NOT NULL,
     quantity DOUBLE,
     price DOUBLE
@@ -14,6 +14,6 @@ CREATE TABLE invoice (
      number_invoice VARCHAR(250) NOT NULL,
      description VARCHAR(250) NOT NULL,
      customer_id VARCHAR(250) NOT NULL,
-     create_at VARCHAR(250) NOT NULL,
+     create_at TIMESTAMP,
      state VARCHAR(250) NOT NULL
 );
