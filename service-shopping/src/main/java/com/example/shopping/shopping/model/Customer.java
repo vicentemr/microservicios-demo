@@ -1,5 +1,8 @@
 package com.example.shopping.shopping.model;
 
+import lombok.Builder;
+
+@Builder
 public class Customer {
     private Long id;
     private String numberID;

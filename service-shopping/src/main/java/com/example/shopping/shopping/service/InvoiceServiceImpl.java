@@ -90,7 +90,7 @@ public class InvoiceServiceImpl implements InvoiceService{
             invoice.setItems(listItem);
             return invoice;
         }
-        return invoiceRepository.findById(id).orElse(null)
+        return invoiceRepository.findById(id).orElse(null);
 
     }
 }
